@@ -1,0 +1,15 @@
+com\mycompany\jsf\util\JsfUtil.class
+com\mycompany\jsf\UsersController$1.class
+com\mycompany\jsf\UsersController$UsersControllerConverter.class
+com\mycompany\jsf\UsersGroupsController.class
+com\mycompany\usermanagement02\resources\JavaEE8Resource.class
+com\mycompany\jsf\UsersController.class
+com\mycompany\jpa\entities\Users.class
+com\mycompany\jpa\entities\UsersGroups.class
+com\mycompany\jpa\session\UsersFacade.class
+com\mycompany\jsf\UsersGroupsController$UsersGroupsControllerConverter.class
+com\mycompany\jsf\UsersGroupsController$1.class
+com\mycompany\jsf\util\PaginationHelper.class
+com\mycompany\jpa\session\UsersGroupsFacade.class
+com\mycompany\jpa\session\AbstractFacade.class
+com\mycompany\usermanagement02\JAXRSConfiguration.class
