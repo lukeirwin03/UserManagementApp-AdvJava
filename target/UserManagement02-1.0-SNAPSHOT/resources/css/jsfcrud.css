@@ -5,18 +5,18 @@ root {
 body {
     font-family: Arial, Helvetica, sans-serif;
     color: #333; /* Dark gray text */
-    background-color: #dfecf1; /* Light blue background */
+    background-color: #f4f4f4; /* Light grey background */
     font-size: small;
     display: flex;
     flex-direction: column;
-    /*align-items: center;*/
-    justify-content: center;
+    align-items: center;
+
     height: 100vh;
     margin: 0;
 }
 
 a {
-    color: #e33b06; /* Red link color */
+    color: #3498db; /* blue link color */
 }
 
 table {
@@ -26,7 +26,7 @@ table {
 form.jsfcrud_list_form th,
 td th {
     font-size: x-small;
-    color: #4e6a71; /* Dark gray text */
+    color: #3498db; /* Dark gray text */
     border-top-style: solid;
     border-bottom-style: solid;
     border-left-style: solid;

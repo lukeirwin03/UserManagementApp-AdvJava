@@ -1,5 +1,4 @@
 com\mycompany\jsf\util\JsfUtil.class
-com\mycompany\beans\LogoutBean.class
 com\mycompany\jsf\UsersController$1.class
 com\mycompany\jsf\UsersController$UsersControllerConverter.class
 com\mycompany\jsf\UsersGroupsController.class
