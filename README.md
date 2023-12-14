@@ -97,6 +97,7 @@ Before starting the installation, ensure the following are installed:
 
 9. **Open up a web browser of your choice, and in the search bar type "localhost:4848" to get to your GlassFish admin console**
 
-10. **Go to Applications -> Deploy -> Choose a File. Upload the .war file that was created when you cleaned and built the project**
+10. **Go to Applications -> Deploy -> Choose a File. Upload the .war file that was created when you cleaned and built the project 
+    (The project takes a couple minutes to deploy)**
 
 11. **Go through the functionality of our web page!**
