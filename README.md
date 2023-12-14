@@ -63,4 +63,6 @@ Before starting the installation, ensure the following are installed:
 
 4. **Go to Projects, right click the project and click 'Clean and Build'**
 
-5. **Open up a web browser of your choice, and in the seach bar type ```sh localhost:8080/UserManagement02-1.0-SNAPSHOT/login.html**
+5. **Open up a web browser of your choice, and in the search bar type "localhost:8080/UserManagement02-1.0-SNAPSHOT/login.html"**
+
+6. **Go through the functionality of our web page!**
