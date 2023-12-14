@@ -55,7 +55,7 @@ Before starting the installation, ensure the following are installed:
 
 1. **Clone the Repository:**
    ```sh
-   git clone https://github.com/your-username/your-repository.git
+   git clone https://github.com/lukeirwin03/UserManagementApp-AdvJava.git
    
 2. **Open the project in NetBeans**
 
