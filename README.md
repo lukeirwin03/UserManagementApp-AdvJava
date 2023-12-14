@@ -61,8 +61,38 @@ Before starting the installation, ensure the following are installed:
 
 3. **Go to Services -> Servers and start your GlassFish server**
 
-4. **Go to Projects, right click the project and click 'Clean and Build'**
+4. **Go to your command prompt and navigate to the file path your project is located in**
 
-5. **Open up a web browser of your choice, and in the search bar type "localhost:8080/UserManagement02-1.0-SNAPSHOT/login.html"**
+5. **Create a realm by pasting this command into command prompt:**
+   ```sh
+   asadmin create-auth-realm --classname com.sun.enterprise.security.auth.realm.jdbc.JDBCRealm --property db-user=root:db-password=Secure.10:jaas-context=jdbcRealm:password-column=password:datasource-jndi=jdbc/securityDatasource:group-table=USERS_GROUPS:user-     
+   table=users:group-name-column=groupid:digest-algorithm=none:user-name-column=userid myjdbcRealm
 
-6. **Go through the functionality of our web page!**
+6. **Go to Services -> Databases -> jdbc:derby://localhost:1527/sample [app on APP], right click on Table and click Execute Command**
+
+7. **Paste these two commands into the editor to create tables**
+    ```sh
+    CREATE TABLE USERS (
+     "USERID" VARCHAR(255) NOT NULL,
+     "PASSWORD" VARCHAR(255) NOT NULL,
+     PRIMARY KEY ("USERID")
+    );
+ 
+    CREATE TABLE USERS_GROUPS (
+      "GROUPID" VARCHAR(20) NOT NULL,
+      "USERID" VARCHAR(255) NOT NULL,
+      PRIMARY KEY ("GROUPID")
+    );
+ 
+   INSERT INTO USERS (userid, password) VALUES ('jerry', 'jerry1234');
+   INSERT INTO USERS_GROUPS (userid, groupid) VALUES ('jerry', 'user');
+ 
+   INSERT INTO USERS (userid, password) VALUES ('admin', 'admin1234');
+   INSERT INTO USERS_GROUPS (userid, groupid) VALUES ('admin', 'admin');
+    
+
+8. **Go to Projects, right click the project and click 'Clean and Build'**
+
+9. **Open up a web browser of your choice, and in the search bar type "localhost:8080/UserManagement02-1.0-SNAPSHOT/login.html"**
+
+10. **Go through the functionality of our web page!**
