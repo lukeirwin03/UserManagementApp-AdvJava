@@ -47,6 +47,7 @@ The application follows a basic architecture with the following components:
 
 Before starting the installation, ensure the following are installed:
 
+- NetBeans 18 IDE 
 - Glassfish 3v
 - Java DB (Derby) with a database named "sample" and an application user (e.g., app) with appropriate privileges.
 
@@ -55,3 +56,11 @@ Before starting the installation, ensure the following are installed:
 1. **Clone the Repository:**
    ```sh
    git clone https://github.com/your-username/your-repository.git
+   
+2. **Open the project in NetBeans**
+
+3. **Go to Services -> Servers and start your GlassFish server**
+
+4. **Go to Projects, right click the project and click 'Clean and Build'**
+
+5. **Open up a web browser of your choice, and in the seach bar type ```sh localhost:8080/UserManagement02-1.0-SNAPSHOT/login.html**
