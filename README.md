@@ -91,9 +91,8 @@ Before starting the installation, ensure the following are installed:
    ```sh
    INSERT INTO USERS (userid, password) VALUES ('username', 'password123');
    INSERT INTO USERS_GROUPS (userid, groupid) VALUES ('username', 'user');
- 
+   ```
     
-
 8. **Go to Projects, right click the project and click 'Clean and Build'**
 
 9. **Open up a web browser of your choice, and in the search bar type "localhost:4848" to get to your GlassFish admin console**
