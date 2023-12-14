@@ -3,31 +3,123 @@
       xmlns:h="http://xmlns.jcp.org/jsf/html"
       xmlns:f="http://xmlns.jcp.org/jsf/core">
 
-<h:head>
-    <title>About the Team</title>
-</h:head>
+    <h:head>
+        <title>About the Team</title>
+        <style>
+            body {
+                font-family: 'Arial', sans-serif;
+                background-color: #f4f4f4;
+                margin: 0;
+                padding: 0;
+            }
 
-<h:body>
-    <h:form>
-        <h1>Our Amazing Team</h1>
+            h1 {
+                text-align: center;
+                color: #333;
+            }
 
-        <div class="team-member">
-            <img src="team-member1.jpg" alt="Team Member 1"/>
-            <h2>John Doe</h2>
-            <p>Position: Developer</p>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla vel metus vel nunc hendrerit cursus.</p>
-        </div>
+            .team-member {
+                background-color: #fff;
+                border: 1px solid #ddd;
+                border-radius: 8px;
+                margin: 20px auto;
+                padding: 20px;
+                width: 80%;
+                max-width: 600px;
+                box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            }
 
-        <div class="team-member">
-            <img src="team-member2.jpg" alt="Team Member 2"/>
-            <h2>Jane Smith</h2>
-            <p>Position: Designer</p>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla vel metus vel nunc hendrerit cursus.</p>
-        </div>
+            h2 {
+                color: #3498db;
+            }
 
-    </h:form>
-    <h:link outcome="/index.xhtml" value="Back to Home"/>
+            p {
+                color: #555;
+            }
 
-</h:body>
+            ul {
+                list-style-type: none;
+                padding: 0;
+            }
+
+            li {
+                margin-bottom: 8px;
+            }
+
+            h:link {
+                display: block;
+                width: 120px;
+                padding: 10px;
+                margin: 20px auto;
+                text-align: center;
+                text-decoration: none;
+                color: #fff;
+                background-color: #3498db;
+                border-radius: 5px;
+            }
+
+            h:link:hover {
+                background-color: #2980b9;
+            }
+        </style>
+    </h:head>
+
+    <h:body>
+        <h:form>
+            <h1>Meet the Team Behind this App</h1>
+
+            <div class="team-member">
+                <h2>Luke Irwin</h2>
+                <p>Major: Computer Science</p>
+                <p>Concentration: Software Engineering</p>
+                <p>Interests/Hobbies: </p>
+                <ul>
+                    <li>Video Games</li>
+                    <li>Mountain Biking</li>
+                    <li>Hanging out with Friends</li>
+                </ul>
+            </div>
+
+            <div class="team-member">
+                <h2>NAME HERE</h2>
+                <p>Major: </p>
+                <p>Concentration: </p>
+                <p>Interests/Hobbies: </p>
+                <ul>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                </ul>
+            </div>
+
+            <div class="team-member">
+                <h2>NAME HERE</h2>
+                <p>Major: </p>
+                <p>Concentration: </p>
+                <p>Interests/Hobbies: </p>
+                <ul>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                </ul>
+            </div>
+
+            <div class="team-member">
+                <h2>NAME HERE</h2>
+                <p>Major: </p>
+                <p>Concentration: </p>
+                <p>Interests/Hobbies: </p>
+                <ul>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                </ul>
+            </div>
+
+
+        </h:form>
+        <h:link outcome="/index.xhtml" value="Back to Home"/>
+
+    </h:body>
 
 </html>

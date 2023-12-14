@@ -1,25 +1,32 @@
-root { 
+root {
     display: block;
 }
 
 body {
     font-family: Arial, Helvetica, sans-serif;
-    color: #3a4f54;
-    background-color: #dfecf1;
+    color: #333; /* Dark gray text */
+    background-color: #dfecf1; /* Light blue background */
     font-size: small;
+    display: flex;
+    flex-direction: column;
+    /*align-items: center;*/
+    justify-content: center;
+    height: 100vh;
+    margin: 0;
 }
 
 a {
-    color: #e33b06;
+    color: #e33b06; /* Red link color */
 }
 
 table {
     empty-cells: show;
 }
 
-form.jsfcrud_list_form th, td th {
+form.jsfcrud_list_form th,
+td th {
     font-size: x-small;
-    color: #4e6a71;
+    color: #4e6a71; /* Dark gray text */
     border-top-style: solid;
     border-bottom-style: solid;
     border-left-style: solid;
@@ -28,17 +35,17 @@ form.jsfcrud_list_form th, td th {
     border-bottom-width: 1px;
     border-left-width: 1px;
     border-right-width: 1px;
-    border-top-color: #b2d5d6;
-    border-bottom-color: #b2d5d6;
-    border-left-color: #90b4bd;
-    border-right-color: #90b4bd;
+    border-top-color: #b2d5d6; /* Light blue border */
+    border-bottom-color: #b2d5d6; /* Light blue border */
+    border-left-color: #90b4bd; /* Grayish blue border */
+    border-right-color: #90b4bd; /* Grayish blue border */
     letter-spacing: 3px;
     text-align: left;
     padding-top: 6px;
     padding-bottom: 6px;
     padding-left: 6px;
     padding-right: 6px;
-    background-color: #b2d5d6;
+    background-color: #b2d5d6; /* Light blue background */
 }
 
 td {
@@ -47,7 +54,8 @@ td {
     font-size: small;
 }
 
-form.jsfcrud_list_form td, td td {
+form.jsfcrud_list_form td,
+td td {
     border-top-style: solid;
     border-bottom-style: solid;
     border-left-style: solid;
@@ -56,23 +64,22 @@ form.jsfcrud_list_form td, td td {
     border-bottom-width: 1px;
     border-left-width: 1px;
     border-right-width: 1px;
-    border-top-color: #b2d5d6;
-    border-bottom-color: #b2d5d6;
-    border-left-color: #b2d5d6;
-    border-right-color: #b2d5d6;
+    border-top-color: #b2d5d6; /* Light blue border */
+    border-bottom-color: #b2d5d6; /* Light blue border */
+    border-left-color: #b2d5d6; /* Light blue border */
+    border-right-color: #b2d5d6; /* Light blue border */
     vertical-align: baseline;
     padding-bottom: 0px;
 }
 
 tr.jsfcrud_odd_row {
-    background-color: #fefeff;
-    color: #4e6a71;
+    background-color: #fefeff; /* Light gray background */
+    color: #4e6a71; /* Dark gray text */
 }
 
-
 tr.jsfcrud_even_row {
-    background-color: #eff5fa;
-    color: #4e6a71;
+    background-color: #eff5fa; /* Light blue background */
+    color: #4e6a71; /* Dark gray text */
 }
 
 #busyImage {
