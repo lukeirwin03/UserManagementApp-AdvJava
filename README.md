@@ -70,7 +70,9 @@ Before starting the installation, ensure the following are installed:
 
 6. **Go to Services -> Databases -> jdbc:derby://localhost:1527/sample [app on APP], right click on Table and click Execute Command**
 
-7. **Paste these commands into the editor to create tables**
+7. **Paste these commands into the editor:**
+
+    Use these commands to create the tables:
     ```sh
     CREATE TABLE USERS (
      "USERID" VARCHAR(255) NOT NULL,
@@ -83,18 +85,19 @@ Before starting the installation, ensure the following are installed:
       "USERID" VARCHAR(255) NOT NULL,
       PRIMARY KEY ("GROUPID")
     );
- 
-   INSERT INTO USERS (userid, password) VALUES ('jerry', 'jerry1234');
-   INSERT INTO USERS_GROUPS (userid, groupid) VALUES ('jerry', 'user');
- 
-   INSERT INTO USERS (userid, password) VALUES ('admin', 'admin1234');
-   INSERT INTO USERS_GROUPS (userid, groupid) VALUES ('admin', 'admin');
+   ```
     
-
+   Use these commands to insert values into our tables:
+   ```sh
+   INSERT INTO USERS (userid, password) VALUES ('username', 'password123');
+   INSERT INTO USERS_GROUPS (userid, groupid) VALUES ('username', 'user');
+   ```
+    
 8. **Go to Projects, right click the project and click 'Clean and Build'**
 
 9. **Open up a web browser of your choice, and in the search bar type "localhost:4848" to get to your GlassFish admin console**
 
-10. **Go to Applications -> Deploy -> Choose a File. Upload the .war file that was created when you cleaned and built the project**
+10. **Go to Applications -> Deploy -> Choose a File. Upload the .war file that was created when you cleaned and built the project 
+    (The project takes a couple minutes to deploy)**
 
 11. **Go through the functionality of our web page!**
